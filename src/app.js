@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 window.onload = () => {
-  document.querySelector("#domainName").innerHTML = generateDomainName;
+  document.querySelector("#domainName").innerHTML = generateDomainName();
 };
 let pronoun = ["the", "our"];
 let adj = ["great", "big"];
@@ -15,3 +15,4 @@ const generateDomainName = () => {
     }
   }
 };
+console.log(generateDomainName());
