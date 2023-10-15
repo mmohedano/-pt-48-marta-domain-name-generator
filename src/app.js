@@ -6,9 +6,10 @@ import "./style.css";
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
-window.onload = function generateDomainName() {
-  //write your code here
-
+window.onload = () => {
+  document.querySelector("#domainNames").innerHTML = generateDomainName();
+};
+let generateDomainName = () => {
   let pronoun = ["the", "our"];
   let adj = ["great", "big"];
   let noun = ["jogger", "racoon"];
