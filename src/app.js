@@ -1,10 +1,18 @@
 /* eslint-disable */
 
-let pronoun = ["the", "our"];
-let adj = ["great", "big"];
-let noun = ["jogger", "racoon"];
+import "bootstrap";
+import "./style.css";
 
-const generateDomainName = () => {
+import "./assets/img/rigo-baby.jpg";
+import "./assets/img/4geeks.ico";
+
+window.onload = function generateDomainName() {
+  //write your code here
+
+  let pronoun = ["the", "our"];
+  let adj = ["great", "big"];
+  let noun = ["jogger", "racoon"];
+
   for (let i = 0; i < pronoun.length; i++) {
     for (let j = 0; j < adj.length; j++) {
       for (let k = 0; k < adj.length; k++)
@@ -12,4 +20,3 @@ const generateDomainName = () => {
     }
   }
 };
-console.log(generateDomainName());
