@@ -1,8 +1,9 @@
 /* eslint-disable */
 
-window.onload = () => {
-  document.querySelector("#domainName").innerHTML = generateDomainName();
+button.onclick = () => {
+  document.getElementById("#domainName").innerHTML = generateDomainName();
 };
+
 let pronoun = ["the", "our"];
 let adj = ["great", "big"];
 let noun = ["jogger", "racoon"];
@@ -15,4 +16,4 @@ const generateDomainName = () => {
     }
   }
 };
-console.log(generateDomainName());
+//console.log(generateDomainName());
